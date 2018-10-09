@@ -1,0 +1,12 @@
+cd bash_HandsOn/output/task_5
+wget https://github.com/dgarrimar/teaching/raw/master/uvic/AdvBI_2018/data/hands-on/bash/scripts.tar.gz
+gunzip scripts.tar.gz
+tar -xf scripts.tar
+mv usage.sh ../../bin
+nano ../../bin/usage.sh
+PATH="$PATH:/home/bash_HandsOn/bin"
+cd ../../bin
+chmod +x bin/usage.sh
+./usage.sh 
+ 
+

@@ -1,0 +1,15 @@
+cd Desktop/Advanced-Bioinf/bash_HandsOn/output/
+mkdir task_3
+cd ../input
+head input.tsv -n 100 > ../output/task_3/top100.tsv
+tail input.tsv -n 50 > ../output/task_3/last100.tsv
+cd ../output/task_3
+wc top100.tsv
+wc last50.tsv
+paste top100.tsv last100.tsv > 150together.tsv
+cut -f1 top100.tsv > 1aColumna.tsv
+paste 1aColumna.tsv  1aColumna.tsv > 150Firstcx2.tsv
+
+
+
+

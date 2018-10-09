@@ -1,0 +1,7 @@
+bin
+input
+logs
+outfile.txt
+output
+task1
+task2

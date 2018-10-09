@@ -1,0 +1,8 @@
+cd Desktop/Advanced_Bioinf/bash_handsOn/output
+mkdir task_4
+cd ../input
+cut -f2 input.tsv | sort -r | grep -v Adipose | grep -v Artery | uniq > unique.tissues2.txt
+cut -f3 input.tsv | sort -r | grep -v Adipose | grep -v Artery | uniq > unique.tissues3.txt
+
+
+

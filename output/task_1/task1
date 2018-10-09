@@ -1,0 +1,16 @@
+#task 1
+#!/bin/bash
+cd /Desktop/Advanced-Bioinf
+mkdir bash_HandsOn
+cd /bash_handsOn
+mkdir bin
+mkdir input
+mkdir output
+mkdir logs
+mkdir trash
+ls -l
+mkdir trash2
+cp -r trash trash2
+mv trash trash1
+rm -rf trash2
+

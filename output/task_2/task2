@@ -1,0 +1,19 @@
+#task 2
+#!/bin/bash
+wget https://raw.githubusercontent.com/dgarrimar/teaching/master/uvic/AdvBI_2018/data/hands-on/bash/sample-groups.tsv
+mv sample-groups.tsv input.tsv
+mv input.tsv /input
+cd input
+ln -s ../input/input.tsv ../trash1
+cd ..
+cd trash1
+mv input.tsv input_symlink
+cd ..
+cd input
+cp input.tsv ../trash1
+cd ..
+cd trash1
+mv input.tsv input_copy
+touch IAmLearningSomeBash
+cd ..
+rm -rf trash1
